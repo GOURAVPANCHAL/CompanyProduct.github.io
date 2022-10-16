@@ -1,0 +1,24 @@
+<div class="bgimg">
+    <div class="our-company">
+        <h1>OUR COMPANY</h1>
+        <h3 style="text-align: center;">DEVELOPING OUR PEOPLE, GROWING OUR BUSINESS</h3>
+    </div>
+    <div style="margin-bottom: 60px;" class="container bgimg">
+        <div class="row">
+            <div style="background-color: #fff;
+        height: 55vh;
+        margin: 8px;
+        width: 26vw; box-shadow: 0 0 30px 0px rgb(0 0 0 / 5%), 8px 8px 0px 0px #ff6; " class="col-md-4"
+                *ngFor="let word of words">
+                <div style=" padding: 40px;" class="align">
+                    <h2>{{word.name}}</h2><br>
+                    <h3>{{word.title}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="yellowimg yellow-colour">
+    <div class="img"></div>
+    <p>{{desc}}</p>
+</div>

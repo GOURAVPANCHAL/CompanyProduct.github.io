@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+h1{
+    font-size: 42px!important;
+    font-weight: 700!important;
+text-align: center;
+line-height: 3rem!important;
+font-family: Roboto!important;
+}
+h2{
+    font-size: 25px!important;
+    font-weight: 500!important;
+font-family: Roboto!important;
+}
+p{
+    line-height: 25px !important;
+font-family: Roboto!important;
+
+}
+h3{
+    font-size: 18px!important;
+    margin-bottom: 5px!important;
+    font-weight: 400!important;
+    color: #999999!important;
+}
+.yellow-colour{
+    background-color: #fdc716;
+}

@@ -1,0 +1,24 @@
+<div class="image"></div>
+<div style="padding: 50px;">
+    <h1>{{heading}}</h1>
+    <hr>
+    <h3 style="margin-left: auto;
+    margin-right: auto;
+    max-width: 700px; text-align: center;">{{content}}</h3>
+</div>
+<div class="container">
+    <div style="padding-bottom: 40px;" class="row">
+        <div *ngFor="let col of cols" class="col-md-4">
+            <ng-container *ngIf="col.data">
+                <div style="border: 1px solid lightgray;
+                padding: 30px; margin-bottom:20px" *ngFor="let data of col.data">
+                    <h2>{{data.title}}</h2>
+                    <h5>{{data.desc}}</h5>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="col.image">
+                <img style="height: 100%; width: 100%;" [src]="'assets/'+col.image">
+            </ng-container>
+        </div>
+    </div>
+</div>

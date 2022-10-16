@@ -1,0 +1,29 @@
+<div style="background-color:#292929; color: white; ">
+    <div class="container footer" style="padding-bottom: 60px;">
+        <div style="padding-top: 60px;" class="row">
+            <div *ngFor="let list of lists" class="col-md-3">
+                <h2 *ngIf="list.name">{{list.name}}</h2>
+                <p *ngIf="list.title">{{list.title}}</p>
+                <ng-container *ngIf="list.images && list.images.length">
+                    <div class="row ">
+                        <div *ngFor="let image of list.images" class="col-md-4 borders">
+                            <img style="margin-bottom: 10px;" width="100%" src="assets/{{image}}" alt="">
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background-color:#292929; color: white; " class="container-fluid footer-bottom">
+    <div style="padding: 35px 0px 15px 97px;border-top: 1px solid gray;" class="row">
+        <div class="col-md-6">
+            <p>{{para}}</p>
+        </div>
+        <div class="col-md-6" style="display: flex; justify-content: space-evenly;">
+            <h3 style="color: white !important;">About</h3>
+            <h3 style="color: white !important;"> Help Desk</h3>
+            <h3 style="color: white !important;">Privacy Policy</h3>
+        </div>
+    </div>
+</div>

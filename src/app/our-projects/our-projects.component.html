@@ -1,0 +1,15 @@
+<div style="padding: 220px 0px 20px 0px;" class="our-projects">
+    <h1>OUR PROJECTS</h1>
+    <h3 style="text-align: center;">ALWAYS DEDICATED AND DEVOTED</h3>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 opacity " style="position: relative; padding: 12px 15px;" *ngFor="let image of images">
+            <div style="overflow: hidden;" class="figure">
+                <img style="height: 100%; position: relative;  max-width: 100%;" [src]='image.name'>
+                <h2>{{image.disc}}</h2>
+            </div>
+        </div>
+    </div>
+</div>

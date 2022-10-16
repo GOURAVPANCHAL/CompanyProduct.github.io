@@ -1,0 +1,10 @@
+.image{
+    background-image: url(../../assets/bg4.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    margin: 7px;
+}

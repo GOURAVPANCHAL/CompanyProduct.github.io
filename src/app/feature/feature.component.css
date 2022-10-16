@@ -1,0 +1,13 @@
+.image{
+    background-image: url(../../assets/bg4.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+:hover.borders img{
+    border: 3px solid #fdc716;
+}
+p{
+    line-height: 30px;
+}

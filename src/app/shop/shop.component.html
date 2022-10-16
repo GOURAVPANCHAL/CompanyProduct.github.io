@@ -1,0 +1,17 @@
+<div class="image"></div>
+<div style="background-color: #d3d3d34a;">
+    <div class="container">
+        <div class="row" style="padding-top:60px; padding-bottom: 60px;">
+            <div style="background-color: #d3d3d375;
+        padding: 21px; margin: 10px; max-width: 265px;" *ngFor="let image of images" class="col-md-3 imghover">
+                <div style="overflow: hidden;">
+                    <img style="width: 100%;" src="assets/{{image.image}}">
+
+                </div>
+                <h2>{{image.title}}</h2>
+                <h4 style="font-weight: 600;">{{image.desc}}</h4>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>

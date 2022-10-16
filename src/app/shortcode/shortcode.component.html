@@ -1,0 +1,54 @@
+<div class="image"></div>
+<div style="background: lightgray;
+padding: 50px;" class="buttons">
+    <div style="background: white;
+    padding: 40px;" class="container">
+        <div style="padding: 25px;">
+            <h2>BUTTONS</h2>
+            <ng-container *ngFor="let btn of buttons">
+                <button class="btn" style="color:white;" [style.background]="btn.bg"
+                    [style.fontSize]="btn.font">{{btn.label}}</button>
+            </ng-container>
+        </div>
+        <div style="padding: 25px;">
+            <h2>Site button pramary & secondry</h2>
+            <ng-container *ngFor="let butn of button">
+                <button class="btn" style="color:white;" [style.background]="butn.bg"
+                    [style.fontSize]="butn.font">{{butn.label}}</button>
+            </ng-container>
+        </div>
+        <div style="padding: 25px;">
+            <h2>Site button different size</h2>
+            <ng-container *ngFor="let new of news">
+                <button class="btn" style="color:white;" [style.background]="new.bg"
+                    [style.fontSize]="new.font">{{new.label}}</button>
+            </ng-container>
+        </div>
+
+        <div style="padding: 25px;">
+            <h2>Site button different size</h2>
+            <ng-container *ngFor="let color of colors">
+                <p style="    font-weight: 600;
+                " class="btn" [style.fontSize]="color.font" [style.color]="color.color">
+                    {{color.label}}</p>
+            </ng-container>
+        </div>
+        <div style="padding: 25px;">
+            <h2>Buttons with different color
+            </h2>
+            <ng-container *ngFor="let diff of different">
+                <button class="btn" style="color:white; border-radius: 0px;" [style.background]="diff.bg"
+                    [style.color]="diff.color" [style.fontSize]="diff.font">{{diff.label}}</button>
+            </ng-container>
+        </div>
+
+        <div style="padding: 25px;">
+            <h2>Buttons with rounded corner</h2>
+            <ng-container *ngFor="let diff of different">
+                <button class="btn" style="color:white; border-radius: 25px;" [style.background]="diff.bg"
+                    [style.color]="diff.color" [style.fontSize]="diff.font">{{diff.label}}</button>
+            </ng-container>
+        </div>
+
+    </div>
+</div>

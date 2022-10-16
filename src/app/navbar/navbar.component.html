@@ -1,0 +1,25 @@
+<div>
+    <ul>
+        <ng-container *ngFor="let option of items ">
+            <li *ngIf="option.options == undefined" class="dropdown">
+                <a [routerLink]="option.link" routerLinkActive="active" class="dropbtn">{{option.label}}</a>
+            </li>
+            <li *ngIf="option.options && option.options.length" class="dropdown">
+                <a [routerLink]="option.link" routerLinkActive="active" class="dropbtn">{{option.label}}</a>
+                <div class="dropdown-content">
+                    <ng-container *ngFor="let subOption of option.options">
+                        <a routerLink="">{{subOption}}</a>
+                    </ng-container>
+                </div>
+            </li>
+        </ng-container>
+    </ul>
+    <div class="searchBox">
+        <input class="searchInput" type="search" name="" placeholder="Search">
+        <button class="searchButton" routerLink="#">
+            <i class="material-icons">
+                search
+            </i>
+        </button>
+    </div>
+</div>

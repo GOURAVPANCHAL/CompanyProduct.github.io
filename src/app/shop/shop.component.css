@@ -1,0 +1,25 @@
+.image{
+    background-image: url(../../assets/bg4.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2,h4{
+    text-align: center;
+}
+button{
+    border: none;
+    padding: 10px;
+    background: #fdc716;
+    color: white;
+    position: relative;
+    left: 67px;
+}
+img:hover{
+    transition: 0.5s ease;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        overflow: hidden;
+        transform: scale(1.5);
+}

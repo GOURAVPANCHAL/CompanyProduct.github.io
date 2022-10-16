@@ -1,0 +1,29 @@
+.our-company{
+padding: 50px;    }
+.bgimg{
+    background-image: url(../../assets/bg10.jpg);
+    background-position: center;
+}
+.img{
+    background-image: url(../../assets/quote.svg);
+    height: 25%;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    top: 20%;
+}
+
+.yellowimg{
+    
+    height: 80vh;
+}
+p{
+    text-align: center;
+
+    font-size: 22px;
+    line-height: 34px;
+    color: #151515;
+    /* width: 70%; */
+    position: relative;
+    top: 25%;
+}
